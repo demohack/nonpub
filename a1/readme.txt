@@ -1,3 +1,10 @@
+04/16  5:30 am  start coding - created test.html, test.js, test.css to isolate and focus dragging and dropping functionality
+       6:00 am  able to show the image and two text boxes within a div
+       6:30 am  stop
+
+https://www.w3schools.com/html/html_layout.asp
+https://www.w3schools.com/css/css_positioning.asp
+
 04/14  8:00 pm  start coding
        8:30 pm  stop
 
