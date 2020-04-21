@@ -1,3 +1,27 @@
+04/20  7:00 pm  start - figured out an ok layout for the image and text1, text 2. Determined I want to implement a color picker and transparency slide, then call it good.
+      10:00 pm  stop  - I feel like a slacker the past week not really as focused on springboard / coding. Tough time at work, and gardening has been a relief.
+
+todo: copy the color picker slider from W3 Schools
+https://www.w3schools.com/colors/colors_picker.asp
+
+04/18  8:00 am  start - cleanup, rename functions and variables to make code more clear
+       9:30 am  stop
+
+04/18  3:00 am  start - was able to combine the two sample code for dragging and resizing, was able to figure out how to apply over multiple div elements, also added resizing of fonts
+       4:30 pm  stop
+
+04/17  9:22 pm  start
+      10:00 pm  stop
+
+04/17  5:34 pm  start coding - found some code to study for dragging divs, and resizing divs
+       6:44 pm  stop / noncoding wins: setup office pc to sync with home mac, using github
+       7:03 pm  setup ssh key for work pc and personal mac
+       7:23 pm  troubleshoot git with ssh key
+       7:31 pm  still can't get git to commit without asking for logging
+
+http://jsfiddle.net/3jMQD/
+https://www.w3schools.com/howto/howto_js_draggable.asp
+
 04/16  5:30 am  start coding - created test.html, test.js, test.css to isolate and focus dragging and dropping functionality
        6:00 am  able to show the image and two text boxes within a div
        6:30 am  stop

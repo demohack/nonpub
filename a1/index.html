@@ -22,18 +22,23 @@
             <input type="submit" id="submitMeme" value="Submit Meme">
         </form>
         <div id="previewDIV">
-            <img id="previewIMG" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/30/14/sharpei.jpg">
-            <div id="previewTXT1">
-                Cute puppie...
+            <div id="previewIMG" class="resizeme">
+                <div class="mydivheader">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/30/14/sharpei.jpg">
+                </div>
             </div>
-            <div id="previewTXT2">
-                Let's play!
+            <div id="previewTXT1" class="resizeme">
+                <div class="mydivheader">Cute puppie...</div>
+            </div>
+            <div id="previewTXT2" class="resizeme">
+                <div class="mydivheader">Let's play!</div>
             </div>
         </div>
     </div>
     <div id="memelist">
     </div>
     <script src="app-ui.js"></script>
+    <script src="resize-move.js"></script>
     <script src="app.js"></script>
     <script src="data-item.js"></script>
     <script src="data-list.js"></script>

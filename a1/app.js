@@ -1,5 +1,5 @@
 "use strict"
-evt = "4-5-memory-game.js:begin";
+evt = "app.js:begin";
 console.log(`${evt}: ${new Date}`);
 
 // PROJECT: Assessment 1 - Meme Generator
