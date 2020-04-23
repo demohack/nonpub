@@ -1,3 +1,6 @@
+04/22  5:30 am  start - decided to use the colormap instead and extracted the relevant HTML/javascript code from W3 Schools, placed them into their own files.
+       6:00 am  stop  - Determined to do at least an hr of coding a day, and have coding breaks.
+
 04/20  7:00 pm  start - figured out an ok layout for the image and text1, text 2. Determined I want to implement a color picker and transparency slide, then call it good.
       10:00 pm  stop  - I feel like a slacker the past week not really as focused on springboard / coding. Tough time at work, and gardening has been a relief.
 
