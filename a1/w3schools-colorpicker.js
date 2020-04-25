@@ -6,6 +6,9 @@ function mouseOverColor(hex) {
     document.getElementById("divpreview").style.visibility = "visible";
     document.getElementById("divpreview").style.backgroundColor = hex;
     document.body.style.cursor = "pointer";
+
+    appUI.previewTXT1.style.backgroundColor = hex;
+    appUI.previewTXT2.style.backgroundColor = hex;
 }
 
 function mouseOutMap() {

@@ -62,7 +62,6 @@ window.addEventListener("change", function (e) {
         text2_onChange(e.target);
     }
 
-    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~ you just clicked", e.target);
 })
 
 window.addEventListener("click", function (e) {
@@ -72,12 +71,10 @@ window.addEventListener("click", function (e) {
     e.preventDefault();
     let target = e.target;
 
-    if (target.matches("#previewIMG")) {
-        dataItem_onClick(target);
-    } else if (target.matches("#previewTXT1")) {
-        dataItem_onClick(target);
-    } else if (target.matches("#previewTXT2")) {
-        dataItem_onClick(target);
+    if (target.matches("#text1")) {
+        text1_onClick(target);
+    } else if (target.matches("#text2")) {
+        text2_onClick(target);
     }
 
 });
@@ -113,7 +110,6 @@ function controlBoard_onDeal(target) {
     const evt = "controlBoard_onDeal";
     console.log(`${evt}: ${new Date}`);
 
-    console.log("you just clicked", target);
 }
 
 function imageURL_onChange(target) {
@@ -122,7 +118,6 @@ function imageURL_onChange(target) {
 
     appUI.previewIMG.src = appUI.imageURL.value;
 
-    console.log("you just clicked", target);
 }
 
 function text1_onChange(target) {
@@ -131,7 +126,6 @@ function text1_onChange(target) {
 
     appUI.previewTXT1.innerHTML = appUI.text1.value;
 
-    console.log("you just clicked", target);
 }
 
 function text2_onChange(target) {
@@ -140,15 +134,20 @@ function text2_onChange(target) {
 
     appUI.previewTXT2.innerHTML = appUI.text2.value;
 
-    console.log("you just clicked", target);
 }
 
-function dataItem_onClick(target) {
-    const evt = "dataItem_onClick";
+function text1_onClick(target) {
+    const evt = "text1_onClick";
     console.log(`${evt}: ${new Date}`);
 
 
-    console.log("you just clicked", target);
+}
+
+function text2_onClick(target) {
+    const evt = "text2_onClick";
+    console.log(`${evt}: ${new Date}`);
+
+
 }
 
 evt = "4-5-memory-game.js:end";

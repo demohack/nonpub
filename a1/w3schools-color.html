@@ -129,30 +129,32 @@
         <area style="cursor:pointer" shape="poly" coords="153,180,162,184,162,195,153,199,144,195,144,184" onclick="clickColor(&quot;#800000&quot;,-20,144)" onmouseover="mouseOverColor(&quot;#800000&quot;)" alt="#800000">
         <area style="cursor:pointer" shape="poly" coords="171,180,180,184,180,195,171,199,162,195,162,184" onclick="clickColor(&quot;#993333&quot;,-20,162)" onmouseover="mouseOverColor(&quot;#993333&quot;)" alt="#993333">
     </map>
+    <div class="hideme">
+        <div id="selectedhexagon" style="visibility: visible; position: relative; width: 21px; height: 21px; background-image: url(&quot;img_selectedcolor.gif&quot;); top: -110px; left: 162px;"></div>
+        <div id="divpreview" style="visibility: hidden; background-color: rgb(255, 0, 0);">&nbsp;</div>
+        <h3>Or Enter a Color:</h3>
+        <div id="entercolorDIV" class="">
+        </div>
+        <div id="wronginputDIV" style="display: none;">Wrong Input</div>
+        <br>
+        <div id="html5DIV">
+            <h3>Or Use HTML5:</h3>
+            <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:85%;">
+        </div>
 
-    <div id="selectedhexagon" style="visibility: visible; position: relative; width: 21px; height: 21px; background-image: url(&quot;img_selectedcolor.gif&quot;); top: -110px; left: 162px;"></div>
-    <div id="divpreview" style="visibility: hidden; background-color: rgb(255, 0, 0);">&nbsp;</div>
-    <h3>Or Enter a Color:</h3>
-    <div id="entercolorDIV" class="">
+        <div class="w3-col l4 m12" style="text-align:center;">
+            <h3>Selected Color:</h3>
+            <div id="selectedcolor" class="w3-large" style="background-color: rgb(255, 0, 255);">
+                <br><br>
+                <span class="w3-text-black">Black Text</span><br><br>
+                <span class="w3-text-black" style="text-shadow:1px 1px 0 #444">Shadow</span><br><br>
+                <span class="w3-text-white">White Text</span><br><br>
+                <span class="w3-text-white" style="text-shadow:1px 1px 0 #444">Shadow</span>
+            </div>
+            <div id="colornamDIV" class="w3-margin-top">Fuchsia</div>
+            <div><b><span id="colorhexDIV">#ff00ff</span></b></div>
+            <div id="colorrgbDIV">rgb(255, 0, 255)</div>
+            <div id="colorhslDIV">hsl(300, 100%, 50%)</div>
+        </div>
     </div>
-    <div id="wronginputDIV" style="display: none;">Wrong Input</div>
-    <br>
-    <div id="html5DIV">
-        <h3>Or Use HTML5:</h3>
-        <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:85%;">
-    </div>
-</div>
-<div class="w3-col l4 m12" style="text-align:center;">
-    <h3>Selected Color:</h3>
-    <div id="selectedcolor" class="w3-large" style="background-color: rgb(255, 0, 255);">
-        <br><br>
-        <span class="w3-text-black">Black Text</span><br><br>
-        <span class="w3-text-black" style="text-shadow:1px 1px 0 #444">Shadow</span><br><br>
-        <span class="w3-text-white">White Text</span><br><br>
-        <span class="w3-text-white" style="text-shadow:1px 1px 0 #444">Shadow</span>
-    </div>
-    <div id="colornamDIV" class="w3-margin-top">Fuchsia</div>
-    <div><b><span id="colorhexDIV">#ff00ff</span></b></div>
-    <div id="colorrgbDIV">rgb(255, 0, 255)</div>
-    <div id="colorhslDIV">hsl(300, 100%, 50%)</div>
 </div>

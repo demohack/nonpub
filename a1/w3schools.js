@@ -1,7 +1,15 @@
+//
+// YUTE: This nifty javascript allows us to break up the main index HTML page and pop them in place based on the presense of w3-include-html tage and file name.
+//
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
+    // YUTE: performance mod: switch to use of querySelectorAll for the particular attribute
+
+    // z = document.getElementsByTagName("*");
+    z = document.querySelectorAll("[w3-include-html]");
+
     for (i = 0; i < z.length; i++) {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
