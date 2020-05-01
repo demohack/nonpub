@@ -1,4 +1,21 @@
+04/29  6:30 pm  start - got the add new meme working, and messed with CSS to get the additional memes to appear side by side
+       8:00 pm
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1
+https://www.w3schools.com/css/css_boxmodel.asp
+
+want to figure out how to have an overlay menu over additional memes, to edit, move up, move down, delete
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+04/25  5:00 pm  start - added ability to pick text foreground color, simplified color picker code
+       7:00 pm  stop
+
+04/24  9:45 pm  start - ????
+      10:30 pm
+
 04/24  5:00 pm  start - simplified the colormap / colorpicker, created non-public git repository
+       7:00 pm
 
 git remote add origin https://github.com/demohack/nonpub.git
 git pull origin master --allow-unrelated-histories

@@ -20,35 +20,34 @@
                 <input type="text" name="text1" id="text1" value=""><br>
                 <label for="text2">text2: </label>
                 <input type="text" name="text2" id="text2" value=""><br>
-                <input type="submit" id="submitNewMeme" value="Submit New">
-                <input type="submit" id="submitEditMeme" value="Submit Edit">
+                <input type="submit" id="addNew" value="Add New">
+                <input type="submit" id="saveEdit" value="Save Edit">
+                <input type="submit" id="clearEditor" value="Clear Editor">
             </form>
         </div>
-        <div w3-include-html="w3color.html"></div>
-        <div id="previewDIV">
-            <div id="previewIMG" class="resizeme">
+        <div w3-include-html="w3color.html" class="controlBlock"></div>
+        <div id="previewDIV" class="c previewDIV">
+            <div id="previewIMG" class="resizeme previewIMG">
                 <div class="mydivheader">
                     <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/08/30/14/sharpei.jpg">
                 </div>
             </div>
-            <div id="previewTXT1" class="resizeme">
+            <div id="previewTXT1" class="resizeme previewTXT1">
                 <div class="mydivheader">Cute puppie...</div>
             </div>
-            <div id="previewTXT2" class="resizeme">
+            <div id="previewTXT2" class="resizeme previewTXT2">
                 <div class="mydivheader">Let's play!</div>
             </div>
         </div>
-    </div>
-    <div id="memelist">
+        <div id="memeList">
+        </div>
     </div>
     <script src="app-ui.js"></script>
     <script src="resize-move.js"></script>
     <script src="app.js"></script>
     <script src="data-item.js"></script>
     <script src="data-list.js"></script>
-    <script src="w3color.js"></script>
     <script src="w3schools.js"></script>
-    <script src="w3colorpicker.js"></script>
 </body>
 
 </html>

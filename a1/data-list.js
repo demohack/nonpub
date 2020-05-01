@@ -1,6 +1,4 @@
 "use strict"
-evt = "card-list.js:begin";
-console.log(`${evt}: ${new Date}`);
 
 class DataList {
     constructor() {
@@ -31,7 +29,7 @@ class DataList {
     }
 
     init() {
-        this.element = document.querySelector("#game");
+        this.element = document.querySelector("#memeList");
 
         // check if this is the first time for the visitor
         this.restore();
@@ -92,8 +90,8 @@ class DataList {
         }
 
         let prevItem = null;
-        let dataID = this.firstItemID;
-        let dataItem = this.loadDataItem(dataID);
+        let itemID = this.firstItemID;
+        let dataItem = this.loadDataItem(itemID);
         this.firstItem = dataItem;
 
         let i = 10000; // safeguard against runaway loops
@@ -104,8 +102,8 @@ class DataList {
             // dataList.element.appendChild(dataItem.element);
 
             prevItem = dataItem;
-            dataID = dataItem.nextItemID;
-            dataItem = this.loadDataItem(dataID);
+            itemID = dataItem.nextItemID;
+            dataItem = this.loadDataItem(itemID);
             prevItem.nextItem = dataItem;
             this.countOfItems++;
 
@@ -114,9 +112,9 @@ class DataList {
         }
     }
 
-    loadDataItem(cardID) {
+    loadDataItem(itemID) {
         let dataItem = new DataItem();
-        return dataItem.restore(cardID);
+        return dataItem.restore(itemID);
     }
 
     saveToLocalStorage() {
@@ -130,11 +128,11 @@ class DataList {
         dataList.store();
     }
 
-    addCard(color, face) {
+    addItem(imageURL, text1, text2, textBackgroundColor) {
         let itemID = this.nextItemID++;
 
         let dataItem = new DataItem();
-        dataItem.init(itemID, color, face);
+        dataItem.init(itemID, imageURL, text1, text2, textBackgroundColor);
 
         dataItem.nextItem = this.firstItem; // works even on the first case, when firstItem is null
         dataItem.nextItemID = this.firstItemID;

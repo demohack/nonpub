@@ -119,7 +119,3 @@ function initResizeMoveElement(el) {
         document.removeEventListener('mouseup', dragStopOnMouseUp, false);
     }
 }
-
-initResizeMoveElement(document.querySelector("#previewIMG"));
-initResizeMoveElement(document.querySelector("#previewTXT1"));
-initResizeMoveElement(document.querySelector("#previewTXT2"));

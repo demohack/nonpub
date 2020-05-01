@@ -1,6 +1,6 @@
-/* .hideme {
+.hideme {
     display: none;
-} */
+}
 
 /*
 // resizable referenced from:
@@ -41,14 +41,33 @@
 // custom code
 */
 
-#previewDIV {
+#memelist {
+    display: block;
+    margin: auto;
+    width: 236px;
+}
+
+.memeItem {
+    display: block;
+    margin: auto;
+    width: 236px;
+}
+
+.controlBlock {
+    margin-top: 10px;
+    position: relative;
+    width: 300px;
+    height: 230px;
+}
+
+.previewDIV {
     background-color: black;
     position: relative;
     width: 300px;
     height: 230px;
 }
 
-#previewIMG {
+.previewIMG {
     background-color: black;
     position: absolute;
     top: 0px;
@@ -57,7 +76,7 @@
     height: 225px;
 }
 
-#previewIMG img {
+.previewIMG img {
     background-color: black;
     position: absolute;
     top: 2px;
@@ -66,8 +85,8 @@
     height: 225px;
 }
 
-#previewTXT1 {
-    background-color: orange;
+.previewTXT1 {
+    background-color: #FFFFFF;
     position: absolute;
     top: 4px;
     left: 47px;
@@ -75,11 +94,41 @@
     opacity: 0.75;
 }
 
-#previewTXT2 {
-    background-color: violet;
+.previewTXT2 {
+    background-color: #FFFFFF;
     position: absolute;
     top: 182px;
     left: 47px;
     width: 200px;
     opacity: 0.75;
+}
+
+
+/* div layouts */
+div.a {
+    display: inline;
+    /* the default for span */
+    /* width: 100px;
+    height: 100px; */
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+div.b {
+    display: inline-block;
+    /* width: 100px;
+    height: 100px; */
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+div.c {
+    display: block;
+    /* width: 100px;
+    height: 100px; */
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
 }

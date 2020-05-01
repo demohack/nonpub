@@ -1,6 +1,4 @@
 "use strict"
-evt = "app.js:begin";
-console.log(`${evt}: ${new Date}`);
 
 // PROJECT: Assessment 1 - Meme Generator
 //
@@ -40,17 +38,11 @@ console.log(`${evt}: ${new Date}`);
 // on load, construct the UI, initialize the DOM events, load the app state, restore game if any
 //
 window.addEventListener("load", function (e) {
-    const evt = "window.load";
-    console.log(`${evt}: ${new Date} start h: ${document.body.clientHeight} w: ${document.body.clientWidth}`);
-
     appUI.init();
     dataList.init();
 });
 
 window.addEventListener("change", function (e) {
-    const evt = "window.addEventListener('change')";
-    console.log(`${evt}: ${new Date}`);
-
     e.preventDefault();
     let target = e.target;
 
@@ -61,13 +53,9 @@ window.addEventListener("change", function (e) {
     } else if (target.matches("#text2")) {
         text2_onChange(e.target);
     }
-
 })
 
 window.addEventListener("click", function (e) {
-    const evt = "window.click";
-    console.log(`${evt}: ${new Date} start h: ${document.body.clientHeight} w: ${document.body.clientWidth}`);
-
     e.preventDefault();
     let target = e.target;
 
@@ -75,8 +63,13 @@ window.addEventListener("click", function (e) {
         text1_onClick(target);
     } else if (target.matches("#text2")) {
         text2_onClick(target);
+    } else if (target.matches("#addNew")) {
+        addNew_onClick(target);
+    } else if (target.matches("#saveEdit")) {
+        saveEdit_onClick(target);
+    } else if (target.matches("#clearEditor")) {
+        clearEditor_onClick(target);
     }
-
 });
 
 window.addEventListener("focus", function (e) {
@@ -113,42 +106,46 @@ function controlBoard_onDeal(target) {
 }
 
 function imageURL_onChange(target) {
-    const evt = "imageURL_onChange";
-    console.log(`${evt}: ${new Date}`);
-
     appUI.previewIMG.src = appUI.imageURL.value;
-
 }
 
 function text1_onChange(target) {
-    const evt = "text1_onChange";
-    console.log(`${evt}: ${new Date}`);
-
     appUI.previewTXT1.innerHTML = appUI.text1.value;
-
 }
 
 function text2_onChange(target) {
-    const evt = "text2_onChange";
-    console.log(`${evt}: ${new Date}`);
-
     appUI.previewTXT2.innerHTML = appUI.text2.value;
-
 }
 
 function text1_onClick(target) {
     const evt = "text1_onClick";
     console.log(`${evt}: ${new Date}`);
-
-
 }
 
 function text2_onClick(target) {
     const evt = "text2_onClick";
     console.log(`${evt}: ${new Date}`);
-
-
 }
 
-evt = "4-5-memory-game.js:end";
-console.log(`${evt}: ${new Date}`);
+function addNew_onClick(target) {
+    const evt = "addNew_onClick";
+    console.log(`${evt}: ${new Date}`);
+    let imageURL = appUI.imageURL.value,
+        text1 = appUI.text1.value,
+        text2 = appUI.text2.value,
+        textBackgroundColor = appUI.backgroundColor;
+
+    let dataItem = dataList.addItem(imageURL, text1, text2, textBackgroundColor);
+    dataItem.element = createElement(dataItem);
+    insertElement(dataItem.element);
+}
+
+function saveEdit_onClick(target) {
+    const evt = "saveEdit_onClick";
+    console.log(`${evt}: ${new Date}`);
+}
+
+function clearEditor_onClick(target) {
+    const evt = "clearEditor_onClick";
+    console.log(`${evt}: ${new Date}`);
+}
