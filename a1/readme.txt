@@ -1,4 +1,5 @@
-07/07  4:11 am  review code
+07/07  4:11 am  review code, added delete meme capability
+       6:49 am  post code to slack
 
 06/16 10:00 am  added delete / edit buttons for each picture added to list
       11:00 am
