@@ -7,7 +7,9 @@
 //    or due to fat fingers.
 //
 
-// Make the DIV element draggable:
+// why: Make the text element on picture draggable
+// by whom: called as mouse moves over a colormap hexagon
+// location: app-ui.js, init()
 function initResizeMoveElement(el) {
 
     //
@@ -15,8 +17,7 @@ function initResizeMoveElement(el) {
     // http://jsfiddle.net/3jMQD/
     //
 
-    // this odd call to add event init() and then to remove it means the resizer div is only added once
-    // this code acts like a class constructor
+    // ensures the resizer div is only added once
     el.addEventListener('click', function init() {
         el.removeEventListener('click', init, false);
 
@@ -29,7 +30,7 @@ function initResizeMoveElement(el) {
         resizer.className = 'resizer';
     }, false);
 
-    var startX = 0,
+    let startX = 0,
         startY = 0,
         startWidth = 0,
         startHeight = 0;
@@ -78,10 +79,8 @@ function initResizeMoveElement(el) {
         el.addEventListener('mousedown', dragStartOnMouseDown, false);
     }
 
-    var offsetX = 0,
-        offsetY = 0,
-        startX = 0,
-        startY = 0;
+    let offsetX = 0,
+        offsetY = 0;
 
     function dragStartOnMouseDown(e) {
         e = e || window.event;

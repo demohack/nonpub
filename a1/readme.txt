@@ -1,3 +1,16 @@
+07/07  4:11 am  review code
+
+06/16 10:00 am  added delete / edit buttons for each picture added to list
+      11:00 am
+
+06/16  4:50 am  getting reacquainted with the assighment and the code, took out ajax call to load HTML colorwheel
+       6:30 am
+
+    goals: add remove button that is overlayed onto the picture when mouse hovers over
+
+06/15  9:45 pm  getting reacquainted with the assighment and the code, took out ajax call to load HTML colorwheel
+      10:00 pm
+
 04/29  6:30 pm  start - got the add new meme working, and messed with CSS to get the additional memes to appear side by side
        8:00 pm
 
